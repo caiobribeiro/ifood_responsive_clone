@@ -28,6 +28,15 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Counter'),
       ),
+      bottomNavigationBar: RangoBottomBar(
+        onIndexSelected: (index) => print(index),
+        items: [
+          RangoBottomBarItem(icon: Icons.home, label: 'Início'),
+          RangoBottomBarItem(icon: Icons.search, label: 'Busca'),
+          RangoBottomBarItem(icon: Icons.file_copy_outlined, label: 'Pedidos'),
+          RangoBottomBarItem(icon: Icons.person, label: 'Perfil'),
+        ],
+      ),
       body: Observer(
         builder: (context) => Text('${store.counter}'),
       ),
