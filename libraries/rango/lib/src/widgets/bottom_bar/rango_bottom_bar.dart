@@ -22,8 +22,16 @@ class _RangoBottomBarState extends State<RangoBottomBar> {
     return BottomNavigationBar(
       items: List.from(
         widget.items.map(
-          (item) =>
-              BottomNavigationBarItem(icon: Icon(item.icon), label: item.label),
+          (item) => BottomNavigationBarItem(
+              icon: RangoIconBar(
+                icon: item.icon,
+                countBadge: item.countBadge,
+              ),
+              activeIcon: RangoIconBar(
+                icon: item.activeIcon,
+                countBadge: item.countBadge,
+              ),
+              label: item.label),
         ),
       ),
       selectedItemColor: Colors.black87,
@@ -36,5 +44,43 @@ class _RangoBottomBarState extends State<RangoBottomBar> {
         });
       }),
     );
+  }
+}
+
+class RangoIconBar extends StatelessWidget {
+  final IconData icon;
+  final int countBadge;
+  const RangoIconBar({
+    super.key,
+    required this.icon,
+    required this.countBadge,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (countBadge > 0) {
+      return Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Icon(icon),
+          Positioned(
+            right: -5,
+            top: -5,
+            child: CircleAvatar(
+              backgroundColor: Colors.red,
+              radius: 8,
+              child: Text(
+                '$countBadge',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                ),
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+    return Icon(icon);
   }
 }
