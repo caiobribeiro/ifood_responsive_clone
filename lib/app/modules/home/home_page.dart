@@ -25,27 +25,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Counter'),
-      ),
-      bottomNavigationBar: RangoBottomBar(
-        onIndexSelected: (index) => print(index),
-        items: [
-          RangoBottomBarItem(icon: Icons.home, label: 'Início'),
-          RangoBottomBarItem(icon: Icons.search, label: 'Busca'),
-          RangoBottomBarItem(icon: Icons.file_copy_outlined, label: 'Pedidos'),
-          RangoBottomBarItem(icon: Icons.person, label: 'Perfil'),
-        ],
-      ),
-      body: Observer(
-        builder: (context) => Text('${store.counter}'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          store.increment();
-        },
-        child: const Icon(Icons.add),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Home'),
+        ),
+        body: Container(
+          color: Colors.red,
+          width: 200,
+          height: 200,
+        ));
   }
 }
