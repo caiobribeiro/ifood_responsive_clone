@@ -4,22 +4,20 @@ import 'package:flutter/material.dart';
 
 class SearchPage extends StatefulWidget {
   final String title;
-  const SearchPage({Key? key, this.title = 'SearchPage'}) : super(key: key);
+  const SearchPage({Key? key, this.title = 'Buscar'}) : super(key: key);
   @override
   SearchPageState createState() => SearchPageState();
 }
+
 class SearchPageState extends State<SearchPage> {
   final SearchStore store = Modular.get();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Column(
-        children: <Widget>[],
-      ),
-    );
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Container());
   }
 }

@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ifood_responsive_clone/app/modules/dashboard/dashboard_store.dart';
+// import 'package:ifood_responsive_clone/app/modules/dashboard/dashboard_store.dart';
 
 void main() {
-  late DashboardStore store;
+  // late DashboardStore store;
 
-  setUpAll(() {
-    store = DashboardStore();
-  });
+  // setUpAll(() {
+  //   store = DashboardStore();
+  // });
 
   test('increment count', () async {
     // expect(store.value, equals(0));

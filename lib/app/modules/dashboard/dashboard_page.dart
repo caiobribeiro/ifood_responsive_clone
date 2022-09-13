@@ -23,7 +23,7 @@ class DashboardPageState extends State<DashboardPage> {
     return Observer(
       builder: (_) {
         return Scaffold(
-          body: RouterOutlet(),
+          body: const RouterOutlet(),
           bottomNavigationBar: RangoBottomBar(
             onIndexSelected: (selectedPage) => {
               store.pageController = selectedPage,

@@ -10,6 +10,6 @@ class SearchModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute('/', child: (_, args) => SearchPage()),
+    ChildRoute('/', child: (_, args) => const SearchPage()),
   ];
 }
