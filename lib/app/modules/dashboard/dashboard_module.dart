@@ -15,13 +15,15 @@ class DashboardModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute(Modular.initialRoute,
-        child: (_, args) => const DashboardPage(),
-        children: [
-          ModuleRoute('/home', module: HomeModule()),
-          ModuleRoute('/search', module: SearchModule()),
-          ModuleRoute('/order', module: OrderModule()),
-          ModuleRoute('/profile', module: ProfileModule()),
-        ]),
+    ChildRoute(
+      '/',
+      child: ((context, args) => const DashboardPage()),
+      children: [
+        ModuleRoute('/home', module: HomeModule()),
+        ModuleRoute('/search', module: SearchModule()),
+        ModuleRoute('/order', module: OrderModule()),
+        ModuleRoute('/profile', module: ProfileModule()),
+      ],
+    ),
   ];
 }
