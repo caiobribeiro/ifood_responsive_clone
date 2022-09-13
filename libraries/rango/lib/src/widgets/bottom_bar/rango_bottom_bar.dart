@@ -34,8 +34,8 @@ class _RangoBottomBarState extends State<RangoBottomBar> {
               label: item.label),
         ),
       ),
-      selectedItemColor: Theme.of(context).errorColor,
-      unselectedItemColor: Colors.black38,
+      selectedItemColor: Colors.red,
+      unselectedItemColor: Colors.grey,
       currentIndex: selected,
       onTap: ((index) {
         widget.onIndexSelected(index);

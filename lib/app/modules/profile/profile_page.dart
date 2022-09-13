@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {
   final String title;
-  const ProfilePage({Key? key, this.title = 'ProfilePage'}) : super(key: key);
+  const ProfilePage({Key? key, this.title = 'Perfil'}) : super(key: key);
   @override
   ProfilePageState createState() => ProfilePageState();
 }
@@ -20,6 +20,9 @@ class ProfilePageState extends State<ProfilePage> {
     return Observer(
       builder: (_) {
         return Scaffold(
+          appBar: AppBar(
+            title: Text(widget.title),
+          ),
           body: Center(
             child: Switch(
               value: appStore.isDark,
