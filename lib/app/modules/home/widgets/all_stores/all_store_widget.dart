@@ -75,6 +75,10 @@ class _AllStoresWidgetState extends State<AllStoresWidget> {
             'https://gkpb.com.br/wp-content/uploads/2020/03/ifood-tudo-por-099-geek-publicitario.jpg',
           ],
         ),
+        const AdvertisingWidget(
+          imageLink:
+              'https://gkpb.com.br/wp-content/uploads/2020/03/ifood-tudo-por-099-geek-publicitario.jpg',
+        ),
       ],
     );
   }
