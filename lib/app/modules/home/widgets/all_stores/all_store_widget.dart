@@ -67,6 +67,14 @@ class _AllStoresWidgetState extends State<AllStoresWidget> {
             ],
           ),
         ),
+        const CouponsAndNewsWidget(
+          imageList: [
+            'https://pbs.twimg.com/ext_tw_video_thumb/1429123597889687556/pu/img/lnRPtKnz90glqAbv?format=jpg&name=large',
+            'https://gkpb.com.br/wp-content/uploads/2020/03/ifood-tudo-por-099-geek-publicitario.jpg',
+            'https://pbs.twimg.com/ext_tw_video_thumb/1429123597889687556/pu/img/lnRPtKnz90glqAbv?format=jpg&name=large',
+            'https://gkpb.com.br/wp-content/uploads/2020/03/ifood-tudo-por-099-geek-publicitario.jpg',
+          ],
+        ),
       ],
     );
   }

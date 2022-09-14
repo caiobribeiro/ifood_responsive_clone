@@ -41,7 +41,7 @@ class CategoryListItem {
 
 class _CategoryItemWidget extends StatefulWidget {
   final CategoryListItem item;
-  const _CategoryItemWidget({super.key, required this.item});
+  const _CategoryItemWidget({required this.item});
 
   @override
   State<_CategoryItemWidget> createState() => _CategoryItemWidgetState();
