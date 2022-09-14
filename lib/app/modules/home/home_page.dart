@@ -53,12 +53,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             ),
             body: TabBarView(
               controller: tabController,
-              children: const [
-                AllStoresWidget(),
-                RestaurantsWidget(),
-                GroceryWidget(),
-                LiquorStoreWidget(),
-                DrugStoreWidget(),
+              children: [
+                AllStoresWidget(tabController: tabController),
+                const RestaurantsWidget(),
+                const GroceryWidget(),
+                const LiquorStoreWidget(),
+                const DrugStoreWidget(),
               ],
             ),
           ),
