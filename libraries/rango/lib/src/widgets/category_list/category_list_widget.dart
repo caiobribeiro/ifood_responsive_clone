@@ -27,18 +27,6 @@ class _CategoryListWidgetState extends State<CategoryListWidget> {
   }
 }
 
-class CategoryListItem {
-  final String label;
-  final String imageUrl;
-  final void Function(CategoryListItem item) onTap;
-
-  CategoryListItem({
-    required this.label,
-    required this.imageUrl,
-    required this.onTap,
-  });
-}
-
 class _CategoryItemWidget extends StatefulWidget {
   final CategoryListItem item;
   const _CategoryItemWidget({required this.item});
@@ -88,4 +76,16 @@ class _CategoryItemWidgetState extends State<_CategoryItemWidget> {
       ),
     );
   }
+}
+
+class CategoryListItem {
+  final String label;
+  final String imageUrl;
+  final void Function(CategoryListItem item) onTap;
+
+  CategoryListItem({
+    required this.label,
+    required this.imageUrl,
+    required this.onTap,
+  });
 }
