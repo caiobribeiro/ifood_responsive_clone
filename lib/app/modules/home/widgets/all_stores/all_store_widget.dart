@@ -107,6 +107,21 @@ class _AllStoresWidgetState extends State<AllStoresWidget> {
                 label: "Mercado"),
           ),
         ),
+        StoreList(
+          store: List.generate(
+            10,
+            (index) => StoreItem(
+              kindOf: 'Bauru',
+              price: '4,99',
+              rate: '5',
+              storeName: 'Gujo Lanches ($index)',
+              time: '20 - 30 min',
+              distance: '5,22',
+              imageUrl:
+                  'https://10619-2.s.cdn12.com/rests/original/314_508710370.jpg',
+            ),
+          ),
+        ),
       ],
     );
   }
