@@ -12,7 +12,7 @@ class AllStoresWidget extends StatefulWidget {
 class _AllStoresWidgetState extends State<AllStoresWidget> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
         SizedBox(
           height: 250,
@@ -75,9 +75,37 @@ class _AllStoresWidgetState extends State<AllStoresWidget> {
             'https://gkpb.com.br/wp-content/uploads/2020/03/ifood-tudo-por-099-geek-publicitario.jpg',
           ],
         ),
+        const SizedBox(
+          height: 16,
+        ),
         const AdvertisingWidget(
           imageLink:
               'https://gkpb.com.br/wp-content/uploads/2020/03/ifood-tudo-por-099-geek-publicitario.jpg',
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        BestRestaurantsWidget(
+          restaurants: List.generate(
+            10,
+            (index) => BestRestaurantItem(
+                id: index,
+                name: '$index + Rango bão',
+                urlImage:
+                    'https://scontent.fcgh3-1.fna.fbcdn.net/v/t39.30808-6/299990556_186213100436900_3661256872735538416_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=DpyJ9EpH7acAX--1Iru&_nc_ht=scontent.fcgh3-1.fna&oh=00_AT_ADDRGdTpD6MAZw3BLPRP78dDDSiv5fMxYbo07nNyQ4A&oe=632796F9'),
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        FastMenuWidget(
+          fastMenuList: List.generate(
+            10,
+            (index) => FastMenuItem(
+                imageUrl:
+                    "https://i.pinimg.com/originals/6a/27/ac/6a27ac5560df47ec8bb998051b74b1f0.png",
+                label: "Mercado"),
+          ),
         ),
       ],
     );

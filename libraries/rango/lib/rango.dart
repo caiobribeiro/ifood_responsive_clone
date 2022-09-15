@@ -5,3 +5,5 @@ export 'src/widgets/bottom_bar/rango_bottom_bar_item.dart';
 export 'src/widgets/category_list/category_list_widget.dart';
 export 'src/widgets/coupons_and_news_widget/coupons_and_news_widget.dart';
 export 'src/widgets/advertising/advertising_widget.dart';
+export 'src/widgets/best_restaurants_widget/best_restaurants_widget.dart';
+export 'src/widgets/fast_menu_widget/fast_menu_widget.dart';
