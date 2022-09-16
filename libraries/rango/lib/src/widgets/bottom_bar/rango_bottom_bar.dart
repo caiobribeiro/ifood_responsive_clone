@@ -69,7 +69,7 @@ class RangoIconBar extends StatelessWidget {
             child: CircleAvatar(
               backgroundColor: Colors.red,
               radius: 8,
-              child: Text(
+              child: SelectableText(
                 '$countBadge',
                 style: const TextStyle(
                   color: Colors.white,

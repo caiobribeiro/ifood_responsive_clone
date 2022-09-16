@@ -87,7 +87,7 @@ class StoreItemWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                SelectableText(
                   store.storeName,
                   style: const TextStyle(
                     fontSize: 14,
@@ -100,7 +100,7 @@ class StoreItemWidget extends StatelessWidget {
                       Icons.star,
                       color: Color.fromARGB(255, 207, 195, 81),
                     ),
-                    Text(
+                    SelectableText(
                       store.rate,
                       style: const TextStyle(
                         fontSize: 14,
@@ -108,7 +108,7 @@ class StoreItemWidget extends StatelessWidget {
                         color: Color.fromARGB(255, 207, 195, 81),
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       "* ${store.kindOf} * 1,9 Km",
                       style: const TextStyle(
                         fontSize: 12,
@@ -117,7 +117,7 @@ class StoreItemWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                Text(
+                SelectableText(
                   "${store.time} * ${store.price}",
                   style: const TextStyle(
                     fontSize: 12,

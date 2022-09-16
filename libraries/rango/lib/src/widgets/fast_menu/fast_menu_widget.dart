@@ -53,7 +53,7 @@ class _FastMenuItemWidget extends StatelessWidget {
               bottom: 5,
               left: 0,
               right: 0,
-              child: Text(
+              child: SelectableText(
                 item.label,
                 textAlign: TextAlign.center,
               ),
