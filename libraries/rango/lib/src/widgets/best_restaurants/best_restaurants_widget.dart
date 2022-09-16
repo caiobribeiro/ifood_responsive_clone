@@ -24,7 +24,7 @@ class BestRestaurantsWidget extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 100,
+          height: 150,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: restaurants.length,
@@ -35,7 +35,7 @@ class BestRestaurantsWidget extends StatelessWidget {
                 child: Column(
                   children: [
                     CircleAvatar(
-                      radius: MediaQuery.of(context).size.width / 16,
+                      radius: 50,
                       backgroundImage:
                           NetworkImage(restaurants[index].urlImage),
                     ),
