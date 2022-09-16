@@ -14,7 +14,6 @@ class StoreList extends StatelessWidget {
             "Lojas",
             style: TextStyle(
               fontSize: 18,
-              color: Colors.black,
               fontWeight: FontWeight.w500,
             ),
           ),

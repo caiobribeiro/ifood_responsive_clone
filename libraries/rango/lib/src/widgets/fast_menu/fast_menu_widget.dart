@@ -31,7 +31,6 @@ class _FastMenuItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
       width: MediaQuery.of(context).size.width / 4.7,
       margin: const EdgeInsets.symmetric(horizontal: 8),
       child: ClipRRect(
